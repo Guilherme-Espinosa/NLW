@@ -1,2 +1,2 @@
 # NLW
-Status: em desenvolvimento.
+Status: Work in progress. | Trabalho em desenvolvimento.
