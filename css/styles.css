@@ -12,7 +12,8 @@ body * {
 }
 
 header {
-    margin-top: 32px;
+    padding-top: 32px;
+    height: calc(120 + 32px);
     text-align: center;
 }
 
@@ -23,7 +24,7 @@ header div {
     border-radius: 50%;
     display: flex;
     padding: 4px;
-    transition: transform .3s;  
+    transition: transform .3s;
 }
 
 header div:hover {
@@ -92,3 +93,4 @@ section ul li:hover {
     width: 70px;
     border: 1px solid #443E54;
 }
+
