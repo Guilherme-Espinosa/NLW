@@ -2,6 +2,10 @@ header div {
     animation: fromTop .7s .2s backwards;
 }
 
+header hgroup {
+    animation: fromTop .7s .4s backwards;
+}
+
 @keyframes fromTop {
     from {
         opacity: 0;

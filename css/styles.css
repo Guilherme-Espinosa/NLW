@@ -36,6 +36,20 @@ header div img {
     border-radius: 50%;
 }
 
+header hgroup {
+    /*definindo background no hgroup*/
+    background-image: linear-gradient(to bottom, #9572FC, #43E7AD, #E2D45C);
+    /*definindo cor do texto que será mostrada caso o  navegador não execute o webkit*/
+    color: #9572FC;
+    /*limitando o background ao formato que o texto do hgroup ocupar*/
+    background-clip: text;
+    /*agora uma parte interessante é que não vamos tornar o texto diretamenre colorido, mas sim fazer com que ele meio que ganhe um atributo chamado "webkit", que foi responsável por vincular anteriormente o texto e o background. Aqui daremos uma ordem para que o webkit deixe o texto transparente, deixando que as cores definidas de fundo apareção no formato em que o texto ocupa. Por conta de como isso funciona, até mesmo emojis seriam afetados por essa ordem e também refletiriam a cor de fundo fixada pelo "background-clip: text;".*/
+    -webkit-background-clip: text;
+
+    /*Agora vamos adicionar transparência ao texto utilizando o webkit, que foi vinculado ao background e ao texto.*/
+    -webkit-text-fill-color: transparent;
+}
+
 main {
     max-width: 580px;
     width: 90%;
